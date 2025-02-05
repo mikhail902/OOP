@@ -23,6 +23,7 @@ class Product:
                 price = value
             if key == "quantity":
                 quantity = value
+
         new_prod = cls(name, description, price, quantity)
         return new_prod
 
