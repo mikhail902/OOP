@@ -29,3 +29,4 @@ def test_category(prod, add_prod):
     assert prod1.price == 300
     assert prod3.quantity == 14
     assert add_prod.product_count == 4
+    assert str(prod) == "Продукты, количество продуктов: 52 шт"
