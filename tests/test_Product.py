@@ -33,3 +33,4 @@ def test_product(telephone_product, new_tel, new_price):
     assert new_tel.price == 180000
     assert new_tel.quantity == 5
     assert new_price is None
+    assert telephone_product + new_tel == 2100000

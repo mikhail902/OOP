@@ -1,3 +1,5 @@
+from itertools import product
+
 from src.Product import Product
 
 
@@ -19,6 +21,12 @@ class Category:
     def add_product(self, prod: Product):
         self.__products.append(prod)
         self.product_count += 1
+
+    def __str__(self):
+        sum_quantity = 0
+        for prod in self.__products:
+            sum_quantity += prod.quantity
+        return f"{self.name}, количество продуктов: {sum_quantity} шт"
 
     @property
     def products(self):
