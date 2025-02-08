@@ -1,6 +1,4 @@
-from itertools import product
-
-from src.Product import Product
+from src.Product import *
 
 
 class Category:
@@ -18,7 +16,7 @@ class Category:
         Category.category_count += 1
         Category.product_count += len(products) if products else 0
 
-    def add_product(self, prod: Product):
+    def add_product(self, prod):
         self.__products.append(prod)
         self.product_count += 1
 
