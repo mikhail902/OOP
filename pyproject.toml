@@ -1,21 +1,14 @@
-[project]
+[tool.poetry]
 name = "oop"
 version = "0.1.0"
 description = ""
-authors = [
-    {name = "mikhail902",email = "misatoropkov@gmail.com"}
-]
+authors = ["миша <misatoropkov@gmail.com>"]
 readme = "README.md"
-requires-python = ">=3.13"
-dependencies = [
-    "pytest (>=8.3.4,<9.0.0)",
-    "black (>=25.1.0,<26.0.0)",
-    "mypy (>=1.14.1,<2.0.0)",
-    "isort (>=6.0.0,<7.0.0)",
-    "flake8 (>=7.1.1,<8.0.0)"
-]
+
+[tool.poetry.dependencies]
+python = "^3.13"
 
 
 [build-system]
-requires = ["poetry-core>=2.0.0,<3.0.0"]
+requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
