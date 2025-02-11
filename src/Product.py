@@ -19,29 +19,24 @@ class Product:
 
     def __add__(self, other):
         if type(self) == type(other):
-            first_product = self.__price * self.quantity
-            second_product = other.__price * other.quantity
-            return first_product + second_product
+            return (self.__price * self.quantity) + (other.__price * other.quantity)
         else:
             raise TypeError
 
     @classmethod
     def new_product(cls, new_prod):
-        if issubclass(Category, (Smartphone, LawnGrass)):
-            name, description, price, quantity = "", "", 0, 0
-            for key, value in new_prod.items():
-                if key == "name":
-                    name = value
-                if key == "description":
-                    description = value
-                if key == "price":
-                    price = value
-                if key == "quantity":
-                    quantity = value
-            new_prod = cls(name, description, price, quantity)
-            return new_prod
-        else:
-            return "Этот продукт нельзя добавить в список продуктов"
+        name, description, price, quantity = "", "", 0, 0
+        for key, value in new_prod.items():
+            if key == "name":
+                name = value
+            if key == "description":
+                description = value
+            if key == "price":
+                price = value
+            if key == "quantity":
+                quantity = value
+        new_prod = cls(name, description, price, quantity)
+        return new_prod
 
     @property
     def price(self):
@@ -55,32 +50,22 @@ class Product:
             self.__price = new
 
 
-class Smartphone(Product):
-    efficiency: int
-    model: str
-    memory: int
-    color: str
+class LawnGrass(Product):
+    def __init__(
+        self, name, description, price, quantity, country, germination_period, color
+    ):
+        super().__init__(name, description, price, quantity)
+        self.country = country
+        self.germination_period = germination_period
+        self.color = color
 
+
+class Smartphone(Product):
     def __init__(
         self, name, description, price, quantity, efficiency, model, memory, color
     ):
-        super().__init__(self, name, description, price, quantity)
+        super().__init__(name, description, price, quantity)
         self.efficiency = efficiency
         self.model = model
         self.memory = memory
         self.color = color
-
-
-class LawnGrass(Product):
-    country: str
-    germination_period: str
-    colour: str
-
-    def __init__(
-        self, name, description, price, quantity, country, germination_period, colour
-    ):
-        super().__init__(self, name, description, price, quantity)
-        self.name = name
-        self.country = country
-        self.germination_period = germination_period
-        self.colour = colour

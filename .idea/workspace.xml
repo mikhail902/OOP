@@ -5,51 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="90d28a7a-0be2-4cb0-ad1b-65054f4c9571" name="Changes" comment="all">
-      <change beforePath="$PROJECT_DIR$/.idea/OOP.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/OOP.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/bin/activate" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/bin/activate.csh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/bin/activate.fish" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/bin/activate.nu" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/bin/activate.ps1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/bin/activate_this.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/bin/black" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/bin/blackd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/bin/dmypy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/bin/doesitcache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/bin/dul-receive-pack" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/bin/dul-upload-pack" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/bin/dulwich" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/bin/flake8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/bin/isort" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/bin/isort-identify-imports" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/bin/keyring" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/bin/mypy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/bin/mypyc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/bin/normalizer" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/bin/pip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/bin/pip-3.13" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/bin/pip3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/bin/pip3.13" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/bin/pkginfo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/bin/poetry" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/bin/py.test" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/bin/pycodestyle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/bin/pyflakes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/bin/pyproject-build" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/bin/pytest" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/bin/python" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/bin/python3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/bin/python3.13" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/bin/stubgen" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/bin/stubtest" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/bin/virtualenv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/bin/xattr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/pyvenv.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/poetry.lock" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/from_product.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Category.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Category.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Product.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Product.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_Product.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_Product.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,19 +67,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python tests.Python tests in test_Category.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in test_Product.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Category.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Product.executor&quot;: &quot;Run&quot;,
-    &quot;Python.__init__.executor&quot;: &quot;Run&quot;,
-    &quot;Python.classes.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python tests.Python tests for test_Product.test_product.executor": "Run",
+    "Python tests.Python tests in test_Category.py.executor": "Run",
+    "Python tests.Python tests in test_Product.py.executor": "Run",
+    "Python.Category.executor": "Run",
+    "Python.Product.executor": "Run",
+    "Python.__init__.executor": "Run",
+    "Python.classes.executor": "Run",
+    "Python.from_product.executor": "Run",
+    "Python.main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main"
   }
-}</component>
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Python tests for test_Product.test_product" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="OOP" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_Product.test_product&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Python tests for test_Product.test_product" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>

@@ -1,6 +1,3 @@
-from src.Product import *
-
-
 class Category:
     name: str
     description: str
@@ -17,8 +14,11 @@ class Category:
         Category.product_count += len(products) if products else 0
 
     def add_product(self, prod):
-        self.__products.append(prod)
-        self.product_count += 1
+        if isinstance(prod, object):
+            self.__products.append(prod)
+            self.product_count += 1
+        else:
+            raise TypeError(f"Добавлять можно только обьекты Product, {prod}")
 
     def __str__(self):
         sum_quantity = 0
