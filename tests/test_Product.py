@@ -10,7 +10,7 @@ def telephone_product():
 
 @pytest.fixture()
 def new_tel():
-    new_product = Product.new_product(
+    new_products = Product.new_product(
         {
             "name": "Samsung Galaxy S23 Ultra",
             "description": "256GB, Серый цвет, 200MP камера",
@@ -18,7 +18,14 @@ def new_tel():
             "quantity": 5,
         }
     )
-    return new_product
+    return new_products
+
+
+@pytest.fixture()
+def category(new_tel, telephone_product):
+    return Category(
+        "Телефоны", "Различные виды телефонов", [new_tel, telephone_product]
+    )
 
 
 @pytest.fixture()
@@ -26,7 +33,7 @@ def new_price(telephone_product):
     telephone_product.price = 0
 
 
-def test_product(telephone_product, new_tel, new_price):
+def test_product(telephone_product, new_tel, new_price, category):
     assert telephone_product.name == "Iphone 16"
     assert telephone_product.price == 150000
     assert telephone_product.quantity == 8
@@ -34,3 +41,6 @@ def test_product(telephone_product, new_tel, new_price):
     assert new_tel.quantity == 5
     assert new_price is None
     assert telephone_product + new_tel == 2100000
+    new_prod = Product("Iphone 11", "256GB, Gray space", 2222, 5)
+    category.add_product(new_prod)
+    assert category.__str__() == "Телефоны, количество продуктов: 18 шт"
