@@ -1,6 +1,7 @@
 class MixinLog:
 
     def __init__(self):
+        """Класс инициализации миксин-класса"""
         print(repr(self))
 
     def __repr__(self):
