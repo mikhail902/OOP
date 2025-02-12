@@ -32,5 +32,8 @@ def test_category(prod, add_prod):
     assert str(prod) == "Продукты, количество продуктов: 52 шт"
     prod4 = Product("apple", "Russia", 400, 20)
     prod.add_product(prod4)
-    assert (prod.products == """Watermelon, 300 руб. Остаток: 10 шт\nlemon, 400 руб. Остаток: 8 шт\nPineapple, 600 руб. Остаток: 14 шт\nBanana, 300 руб. Остаток: 20 шт\napple, 400 руб. Остаток: 20 шт\n""")
+    assert (
+        prod.products
+        == """Watermelon, 300 руб. Остаток: 10 шт\nlemon, 400 руб. Остаток: 8 шт\nPineapple, 600 руб. Остаток: 14 шт\nBanana, 300 руб. Остаток: 20 шт\napple, 400 руб. Остаток: 20 шт\n"""
+    )
     assert str(prod) == "Продукты, количество продуктов: 72 шт"
