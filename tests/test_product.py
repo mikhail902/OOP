@@ -1,6 +1,6 @@
 import pytest
 
-from src.Product import *
+from src.product import *
 
 
 @pytest.fixture()
@@ -41,6 +41,4 @@ def test_product(telephone_product, new_tel, new_price, category):
     assert new_tel.quantity == 5
     assert new_price is None
     assert telephone_product + new_tel == 2100000
-    new_prod = Product("Iphone 11", "256GB, Gray space", 2222, 5)
-    category.add_product(new_prod)
-    assert category.__str__() == "Телефоны, количество продуктов: 18 шт"
+    assert category.__str__() == "Телефоны, количество продуктов: 13 шт"

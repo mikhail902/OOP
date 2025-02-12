@@ -5,7 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="90d28a7a-0be2-4cb0-ad1b-65054f4c9571" name="Changes" comment="all">
-      <change beforePath="$PROJECT_DIR$/tests/test_Product.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_Product.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/OOP.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/OOP.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poetry.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Category.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/category.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Product.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/product.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/from_product.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/from_product.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_Category.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_category.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_Product.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_product.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,18 +76,21 @@
     "Python tests.Python tests for test_Product.test_product.executor": "Run",
     "Python tests.Python tests in test_Category.py.executor": "Run",
     "Python tests.Python tests in test_Product.py.executor": "Run",
+    "Python tests.Python tests in test_category.py.executor": "Run",
+    "Python tests.Python tests in test_product.py.executor": "Run",
     "Python.Category.executor": "Run",
     "Python.Product.executor": "Run",
     "Python.__init__.executor": "Run",
     "Python.classes.executor": "Run",
     "Python.from_product.executor": "Run",
     "Python.main.executor": "Run",
+    "Python.product.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main"
   }
 }]]></component>
   <component name="RunManager">
-    <configuration name="Python tests for test_Product.test_product" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for tests.test_product.test_product" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="OOP" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -88,13 +101,13 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_Product.test_product&quot;" />
+      <option name="_new_target" value="&quot;tests.test_product.test_product&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for test_Product.test_product" />
+        <item itemvalue="Python tests.Python tests for tests.test_product.test_product" />
       </list>
     </recent_temporary>
   </component>

@@ -1,7 +1,7 @@
 import pytest
 
-from src.Category import *
-from src.Product import *
+from src.category import *
+from src.product import *
 
 prod1 = Product("Watermelon", "from china", 300, 10)
 prod2 = Product("lemon", "Pakistan", 400, 8)
@@ -30,3 +30,7 @@ def test_category(prod, add_prod):
     assert prod3.quantity == 14
     assert add_prod.product_count == 4
     assert str(prod) == "Продукты, количество продуктов: 52 шт"
+    prod4 = Product("apple", "Russia", 400, 20)
+    prod.add_product(prod4)
+    assert (prod.products == """Watermelon, 300 руб. Остаток: 10 шт\nlemon, 400 руб. Остаток: 8 шт\nPineapple, 600 руб. Остаток: 14 шт\nBanana, 300 руб. Остаток: 20 шт\napple, 400 руб. Остаток: 20 шт\n""")
+    assert str(prod) == "Продукты, количество продуктов: 72 шт"

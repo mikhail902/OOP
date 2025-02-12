@@ -1,7 +1,7 @@
-from src.Category import *
+from src.category import *
+from src.from_product import BaseProduct
 
-
-class Product:
+class Product(BaseProduct):
     name: str
     description: str
     price: float

@@ -1,3 +1,6 @@
+from src.product import *
+
+
 class Category:
     name: str
     description: str
@@ -14,7 +17,7 @@ class Category:
         Category.product_count += len(products) if products else 0
 
     def add_product(self, prod):
-        if isinstance(prod, object):
+        if isinstance(prod, Product):
             self.__products.append(prod)
             self.product_count += 1
         else:
