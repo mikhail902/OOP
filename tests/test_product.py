@@ -1,5 +1,6 @@
 import pytest
 
+from src.category import *
 from src.product import *
 
 
@@ -33,7 +34,20 @@ def new_price(telephone_product):
     telephone_product.price = 0
 
 
-def test_product(telephone_product, new_tel, new_price, category):
+@pytest.fixture()
+def lawn_grass():
+    return LawnGrass(
+        "Газонная трава 2",
+        "Выносливая трава",
+        450.0,
+        15,
+        "США",
+        "5 дней",
+        "Темно-зеленый",
+    )
+
+
+def test_product(telephone_product, new_tel, new_price, category, lawn_grass):
     assert telephone_product.name == "Iphone 16"
     assert telephone_product.price == 150000
     assert telephone_product.quantity == 8
@@ -42,3 +56,4 @@ def test_product(telephone_product, new_tel, new_price, category):
     assert new_price is None
     assert telephone_product + new_tel == 2100000
     assert category.__str__() == "Телефоны, количество продуктов: 13 шт"
+    assert str(lawn_grass) == "Газонная трава 2, 450.0 руб. Остаток 15 шт"

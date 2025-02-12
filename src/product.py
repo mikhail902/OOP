@@ -1,8 +1,9 @@
 from src.category import *
 from src.from_product import BaseProduct
+from src.mixin_log import MixinLog
 
 
-class Product(BaseProduct):
+class Product(MixinLog, BaseProduct):
     name: str
     description: str
     price: float
@@ -14,6 +15,7 @@ class Product(BaseProduct):
         self.description = description
         self.__price = price
         self.quantity = quantity
+        super().__init__()
 
     def __str__(self):
         return f"{self.name}, {self.__price} руб. Остаток {self.quantity} шт"
@@ -51,7 +53,7 @@ class Product(BaseProduct):
             self.__price = new
 
 
-class LawnGrass(Product):
+class LawnGrass(Product, MixinLog):
     def __init__(
         self, name, description, price, quantity, country, germination_period, color
     ):
@@ -61,7 +63,7 @@ class LawnGrass(Product):
         self.color = color
 
 
-class Smartphone(Product):
+class Smartphone(Product, MixinLog):
     def __init__(
         self, name, description, price, quantity, efficiency, model, memory, color
     ):
