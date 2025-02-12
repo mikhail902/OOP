@@ -1,6 +1,7 @@
 from src.category import *
 from src.from_product import BaseProduct
 
+
 class Product(BaseProduct):
     name: str
     description: str
