@@ -2,11 +2,6 @@ from abc import ABC, abstractmethod
 
 
 class BaseProduct(ABC):
-
-    @classmethod
     @abstractmethod
-    def __init__(cls, name, description, price, quantity):
-        cls.name = name
-        cls.description = description
-        cls.price = price
-        cls.quantity = quantity
+    def __str__(self):
+        return f"{self.name}, {self.__price} руб. Всего {self.quantity} шт"
