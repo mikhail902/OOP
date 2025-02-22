@@ -29,6 +29,17 @@ class Category:
             sum_quantity += prod.quantity
         return f"{self.name}, количество продуктов: {sum_quantity} шт"
 
+    def middle_price(self):
+        try:
+            sum_price = 0
+            amount = 0
+            for prod in self.__products:
+                sum_price += prod.price
+                amount += 1
+            return round(sum_price / amount, 2)
+        except ZeroDivisionError:
+            return 0
+
     @property
     def products(self):
         str_products = ""

@@ -24,8 +24,17 @@ def add_prod(prod):
     return prod
 
 
-def test_category(prod, add_prod):
-    assert Category.category_count == 1
+@pytest.fixture()
+def nul_category():
+    return Category(
+        "0",
+        "0",
+        [],
+    )
+
+
+def test_category(prod, add_prod, nul_category):
+    assert Category.category_count == 2
     assert prod1.price == 300
     assert prod3.quantity == 14
     assert add_prod.product_count == 4
@@ -37,3 +46,6 @@ def test_category(prod, add_prod):
         == """Watermelon, 300 руб. Остаток: 10 шт\nlemon, 400 руб. Остаток: 8 шт\nPineapple, 600 руб. Остаток: 14 шт\nBanana, 300 руб. Остаток: 20 шт\napple, 400 руб. Остаток: 20 шт\n"""
     )
     assert str(prod) == "Продукты, количество продуктов: 72 шт"
+    assert prod.middle_price() == 400
+    with pytest.raises(ZeroDivisionError):
+        nul_category.middle_price()
