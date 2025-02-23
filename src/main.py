@@ -43,7 +43,6 @@ if __name__ == "__main__":
     print(smartphone2.model)
     print(smartphone2.memory)
     print(smartphone2.color)
-
     print(smartphone3.name)
     print(smartphone3.description)
     print(smartphone3.price)
