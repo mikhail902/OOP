@@ -47,5 +47,4 @@ def test_category(prod, add_prod, nul_category):
     )
     assert str(prod) == "Продукты, количество продуктов: 72 шт"
     assert prod.middle_price() == 400
-    with pytest.raises(ZeroDivisionError):
-        nul_category.middle_price()
+    assert nul_category.middle_price() == 0

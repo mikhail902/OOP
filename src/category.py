@@ -36,6 +36,7 @@ class Category:
             for prod in self.__products:
                 sum_price += prod.price
                 amount += 1
+                print(1)
             return round(sum_price / amount, 2)
         except ZeroDivisionError:
             return 0
